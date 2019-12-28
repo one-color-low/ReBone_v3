@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>V ルームを作ろう！！</title>
+
+  <!-- Bootstrap -->
+  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <form method="POST">
+    <p>あなたの代わりとなるモデルを選択してください</p>
+    <select name="model">
+      <option value="miku_1">ミク その1</option>
+      <option value="mirai">ミライ小町</option>
+    </select>
+
+    <p>ルームの背景を選択してください</p>
+    <select name="background">
+      <option value="mori">森</option>
+      <option value="umi">海</option>
+      <option value="heya">部屋</option>
+    </select>
+
+    <p>ルーム名を入力してください</p>
+    <input type="text" name="room_name">
+    <p>
+        {{message}}
+    </p>
+
+    <br><br>
+
+    <input type="submit">
+  </form>
+
+
+</body>
+
+</html>
+
+<!--
+  Todo
+  - モデルの選択
+  - 背景の選択
+  - ルーム名の入力
+  できればajaxでリアルタイムに表示
+-->
